@@ -1,0 +1,253 @@
+<html>
+  <head>
+    <title>My First Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <style>
+      #hello_image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      body {
+        background-image: url("sky9.png");
+        background-size: contain;
+      }
+
+      .container {
+        text-align: center;
+        color: khaki;
+        font-family: "Sofia", sans-serif;
+        text-shadow: 0 0 3px #ffd700, 0 0 5px #007dff;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #demo {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        color: khaki;
+      }
+
+      .rotate {
+        animation: rotation 18s infinite linear;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      @keyframes fade-out {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+
+      .box1 {
+        animation: fade-out 10s;
+        opacity: 0;
+        top: 40%;
+        left: 30%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+      }
+      .box2 {
+        animation: fade-out 25s;
+        opacity: 0;
+        top: 20%;
+        left: 40%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+      .box3 {
+        animation: fade-out 20s;
+        opacity: 0;
+        top: 70%;
+        left: 70%;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+      }
+      .box4 {
+        animation: fade-out 30s;
+        opacity: 0;
+        top: 10%;
+        left: 70%;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+      }
+      .box5 {
+        animation: fade-out 15s;
+        opacity: 0;
+        top: 30%;
+        left: 60%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+      }
+      .box6{
+          animation: fade-out 45s;
+          opacity: 0;
+          top: 35%;
+          left: 65%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+        }
+    .box7 {
+        animation: fade-out 55s;
+        opacity: 0;
+        top: 25%;
+        left: 15%;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+    .box8 {
+        animation: fade-out 65s;
+        opacity: 0;
+        top: 65%;
+        left: 15%;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+    .box9 {
+        animation: fade-out 60s;
+        opacity: 0;
+        top: 85%;
+        left: 25%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+    }
+    .box10 {
+        animation: fade-out 70s;
+        opacity: 0;
+        top: 15%;
+        left: 35%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+    .box11 {
+        animation: fade-out 75s;
+        opacity: 0;
+        top: 60%;
+        left: 20%;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+    .box12 {
+        animation: fade-out 80s;
+        opacity: 0;
+        top: 50%;
+        left: 17%;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+        
+    </style>
+    <script>
+      var btn = document.getElementById("hello_world");
+
+      var flag = false;
+
+      function playAudio(url) {
+        if (!flag) {
+          var audio = new Audio(url);
+
+          audio.loop = true;
+          audio.play();
+          flag = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+      <div class="container" position="relative">
+          <div class="box1">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box2">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box2">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box3">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box4">
+              <img src="shine.png" width="10%" height="auto" />
+          </div>
+          <div class="box5">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box6">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box7">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box8">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box8">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box10">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box11">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div class="box12">
+              <img src="shine.png" width="100%" height="auto" />
+          </div>
+          <div id="hello_world">
+              <div class="centered">
+                  <h1 onclick="playAudio('merchanie.mp3')">Hello, World !</h1>
+              </div>
+          </div>
+      </div>
+
+    <p id="demo"></p>
+    <script>
+      document
+        .getElementById("hello_world")
+        .addEventListener("click", function () {
+          document.getElementById("demo").innerHTML = "Make wishes!!!";
+        });
+    </script>
+  </body>
+</html>
